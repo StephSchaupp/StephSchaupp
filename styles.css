@@ -1,9 +1,9 @@
 :root{
-  --bg:#0f1724;
-  --card:#0b1220;
-  --muted:#9aa4b2;
-  --accent:#7c3aed;
-  --white:#e6eef8;
+  --bg:#2b1f20;          /* slightly warmer dark background */
+  --card:#3a2829;        /* warmer card background */
+  --muted:#d6bcbc;       /* soft muted text */
+  --accent:#eed2d4;      /* pink accent matches header */
+  --white:#fff8f8;       /* near-white for text */
   --radius:14px;
   --container:1100px;
   font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -14,7 +14,7 @@ html,body{height:100%}
 body{
   margin:0;
   color:var(--white);
-  background: linear-gradient(180deg, #071024 0%, #071020 100%);
+  background: linear-gradient(180deg, #2b1f20 0%, #1f1617 100%);
   line-height:1.45;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -32,8 +32,8 @@ body{
   top:0;
   z-index:20;
   backdrop-filter: blur(6px);
-  border-bottom:1px solid rgba(255,255,255,0.03);
-  background: linear-gradient(180deg, rgba(7,8,15,0.6), rgba(7,8,15,0.35));
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  background: linear-gradient(180deg, rgba(238,210,212,0.8), rgba(238,210,212,0.35));
 }
 .header-inner{
   display:flex;
@@ -41,7 +41,7 @@ body{
   justify-content:space-between;
 }
 .logo{
-  color:var(--white);
+  color:var(--accent);
   font-weight:700;
   text-decoration:none;
   font-size:1.05rem;
@@ -54,7 +54,7 @@ body{
 }
 .nav a{ color:var(--muted); text-decoration:none; padding:6px 8px; border-radius:8px; font-size:0.95rem}
 .nav a:hover{ color:var(--white) }
-.cta{ background:transparent; border:1px solid rgba(255,255,255,0.06); padding:7px 12px; border-radius:10px; color:var(--white); text-decoration:none;}
+.cta{ background:transparent; border:1px solid rgba(238,210,212,0.4); padding:7px 12px; border-radius:10px; color:var(--white); text-decoration:none;}
 
 /* mobile nav toggle */
 .nav-toggle{ display:none; background:transparent; border:0; color:var(--white); font-size:1.25rem; cursor:pointer; }
@@ -67,16 +67,16 @@ body{
   color:var(--white);
   background-size:cover;
   background-position:center;
-  border-bottom:1px solid rgba(255,255,255,0.03);
+  border-bottom:1px solid rgba(255,255,255,0.05);
   padding:3.5rem 0;
 }
 .hero-inner{ display:flex; gap:2rem; align-items:center; }
-.hero-avatar{ width:110px; height:110px; border-radius:999px; object-fit:cover; border:3px solid rgba(255,255,255,0.06)}
+.hero-avatar{ width:110px; height:110px; border-radius:999px; object-fit:cover; border:3px solid rgba(238,210,212,0.5)}
 .hero-text h1{ margin:0 0 .5rem 0; font-size:2rem}
 .lead{ color:var(--muted); margin:0 0 1rem 0; max-width:60ch}
 .accent{ color:var(--accent) }
-.btn{ display:inline-block; padding:.6rem 1rem; border-radius:10px; text-decoration:none; background:var(--accent); color:white; font-weight:600}
-.btn.ghost{ background:transparent; border:1px solid rgba(255,255,255,0.06); margin-left:.6rem}
+.btn{ display:inline-block; padding:.6rem 1rem; border-radius:10px; text-decoration:none; background:var(--accent); color:var(--bg); font-weight:600}
+.btn.ghost{ background:transparent; border:1px solid rgba(238,210,212,0.4); margin-left:.6rem; color:var(--white)}
 
 /* sections */
 .section{ padding:3rem 0; }
@@ -84,7 +84,7 @@ body{
 
 /* projects */
 .grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap:1.2rem }
-.card{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:1rem; border-radius:12px; box-shadow:0 8px 20px rgba(2,6,23,0.6) }
+.card{ background:linear-gradient(180deg, rgba(238,210,212,0.05), rgba(238,210,212,0.02)); padding:1rem; border-radius:12px; box-shadow:0 8px 20px rgba(43,31,32,0.6) }
 .card img{ width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:.75rem }
 .card h3{ margin:.3rem 0 }
 .card p{ color:var(--muted); margin:0.2rem 0 1rem 0; font-size:0.95rem }
@@ -94,11 +94,11 @@ body{
 .contact-form{ display:grid; gap:.8rem; max-width:720px }
 .contact-form label{ display:block; color:var(--muted); font-size:.9rem }
 .contact-form input, .contact-form textarea{
-  width:100%; padding:.65rem; border-radius:10px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--white)
+  width:100%; padding:.65rem; border-radius:10px; border:1px solid rgba(238,210,212,0.2); background:transparent; color:var(--white)
 }
 
 /* footer */
-.site-footer{ padding:2rem 0; color:var(--muted); border-top:1px solid rgba(255,255,255,0.03) }
+.site-footer{ padding:2rem 0; color:var(--muted); border-top:1px solid rgba(255,255,255,0.05) }
 
 /* responsive */
 @media (max-width:900px){
@@ -108,4 +108,3 @@ body{
   .nav-toggle{ display:block }
   .hero-avatar{ width:90px; height:90px }
 }
-
