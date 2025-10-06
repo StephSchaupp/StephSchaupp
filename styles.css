@@ -77,8 +77,8 @@ body {
 }
 .hero-inner{ display:flex; gap:2rem; align-items:center; }
 .hero-avatar {
-  width: 180px;     /* previously 110px */
-  height: 180px;    /* same here to keep it a circle */
+  width: 130px;     /* previously 110px */
+  height: 130px;    /* same here to keep it a circle */
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(238,210,212,0.5);
