@@ -95,7 +95,7 @@ body {
 }
 
 .lead {
-  color: var(--muted);
+  color: #3a1d1f;
   margin: 0 0 1rem 0;
   max-width: 60ch;
 }
