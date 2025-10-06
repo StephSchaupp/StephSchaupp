@@ -76,7 +76,7 @@ body {
   padding:3.5rem 0;
 }
 .hero-inner{ display:flex; gap:2rem; align-items:center; }
-@media (max-width: 900px) {.hero-avatar {width: 180px;height: 180px;} border-radius:999px; object-fit:cover; border:3px solid rgba(238,210,212,0.5)}
+@media (max-width: 180px) {.hero-avatar {width: 180px;height: 180px;} border-radius:999px; object-fit:cover; border:3px solid rgba(238,210,212,0.5)}
 .hero-text h1{ margin:0 0 .5rem 0; font-size:2rem}
 .lead{ color:var(--muted); margin:0 0 1rem 0; max-width:60ch}
 .accent{ color:#4a1d1f }
